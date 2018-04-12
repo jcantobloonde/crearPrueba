@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "crear-prueba.js",
+  "sources": [
+    "ng://crear-prueba/out/app/modules/prueba/prueba.module.ts",
+    "ng://crear-prueba/out/app/modules/prueba/prueba.component.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { PruebaComponent } from './prueba.component';\n\n@NgModule({\n  imports: [\n    CommonModule\n  ],\n  declarations: [PruebaComponent],\n  exports: [\n    PruebaComponent // <-- Esto!\n  ]\n})\nexport class PruebaModule { }\n",
+    "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-prueba',\n  template: `<h1>\n  <ng-content></ng-content>\n</h1>\n`,\n  styles: [`h1{color:#00f}`]\n})\nexport class PruebaComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit() {\n  }\n\n}\n"
+  ],
+  "names": [],
+  "mappings": ";;;ACAA;IAYE;KAAiB;IAEjB,kCAAQ,GAAR;KACC;;;;IAbH,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,YAAY;gBACtB,QAAQ,EAAE,4CAGX;gBACC,MAAM,EAAE,CAAC,gBAAgB,CAAC;aAC3B,EAAD,EAAA;;;ADTA;IAAA;;;;;IAIA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACR,OAAO,EAAE;oBACP,YAAY;iBACb;gBACD,YAAY,EAAE,CAAC,eAAe,CAAC;gBAC/B,OAAO,EAAE;oBACP,eAAe;iBAChB;aACF,EAAD,EAAA;;;;;"
+}
